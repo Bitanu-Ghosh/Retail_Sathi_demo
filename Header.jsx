@@ -8,7 +8,6 @@ export default function Header() {
   const handleSearch = (e) => {
     e.preventDefault();
     if (query.trim()) {
-      // You can redirect to a search page or handle search here
       navigate(`/search?q=${query.trim()}`);
     }
   };
@@ -19,7 +18,7 @@ export default function Header() {
         {/* Left Side */}
         <div className="flex items-center gap-4">
           <Link to="/" className="text-xl font-bold text-green-400">
-            🗂 SmartRetail AI
+            RetailSAATHI
           </Link>
           <nav className="hidden md:flex gap-4 text-sm text-blue-400">
             <Link to="/" className="hover:text-white transition">Home</Link>
@@ -57,3 +56,4 @@ export default function Header() {
     </header>
   );
 }
+
